@@ -1,0 +1,76 @@
+Digital Image Processing Lecture 2
+
+
+Pinhole camera/Camera Obscura
+	Add a barrier to block off most of the rays 
+	this reduces blurring 
+	the opening is known as an aperture
+	Image is inverted
+	
+	The smaller the aperture the less blurry the image is
+		up to a certain point then making it smaller makes it blurry again
+		
+Lens either in front of behind the aperture
+	Lens focuses parallet ray into a single focal point
+	focal point is at distance f
+	
+	focal length depends on radius of the lens and refractory index
+		more curved the further the focal distance is
+	
+	1/f = (n-1)(1/R1 - 1/R2)
+	
+	Lens focuses the light onto the sensor
+		there is a specific distance at which objects are in focus
+		distance between lens and sensor
+		
+Optics of the eye
+
+	Iris - aperture, muscle that controls how much light is let in
+	lens - lens
+	Cornea - clear front surface of the eye, main refractive surface of they eye
+		also acts as filter for only visible light
+	
+	Retena
+		Surface on the back of the eye where the light is focused
+		Contains nerves called photoreceptors that react to light
+		Photoreceptors come in 2 shapes
+			Rods - Low light confitions, scotopic vision
+			Cones - high light conditions, photopic vision
+			
+			Cones are mostly around the center of the eye and are smaller in number and larger in size
+				higher resolution than rods
+			Rods are most common at 20 degrees away from the center and there are many more of them. smaller in size
+				This means that at night you cannot see something directly in front of the center of your eye at night
+				
+		Peripheral vision provides very little color information
+			but is very good at detecting motion
+			
+		Eyes have 3 sets of sensors with peak sensetivities at light frequencies, red (580nm), green (540nm), and blue (450nm)
+			Red cones, blue cones, green cones
+		
+		Rods are more sensitive to light and percieve more of the visible spectrum
+		
+Factors affecting visibility
+
+	Contrast - Relationship between the luminance of an object and its background
+		Background vs. foreground
+	
+	Size - size of the image on the retina, larger is easier to see
+	
+	Time - when viewed very briefly brain cannot process fast enough to see the details
+	
+	
+Steps in the process of vision
+
+	Physics of light
+	imaging process (optics of the eye)
+	Visual sensors (photoreceptors)
+	Low-level image processing (retinal mechanisms)
+	High-level image processing (central brain mechanisms, cerebral cortex)
+
+	Low level processing - image formation, sampling, spacial filtering
+
+	Higher levels are less well understood
+
+
+Optical imaging geometry

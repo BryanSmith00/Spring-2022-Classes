@@ -25,7 +25,7 @@ to capture digital images you simply need an em wave and a sensor that captures 
 
 Emitted radiation - Object directly emits the EM radiation that you capture. ex. imaging the sun
 Reflected radiation - Radiation comes from a source, bounces off of an object and is observed. ex. looking at the moon
-Altered radiation - Source of light with an object in front of it that you capture. ex. x rays
+Altered/Asorption radiation - Source of light with an object in front of it that you capture. ex. x rays
 
 
 Gamma-ray imaging

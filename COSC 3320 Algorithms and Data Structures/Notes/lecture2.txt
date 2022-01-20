@@ -1,0 +1,29 @@
+Algo Lecture 2
+
+Tiling problem contd.
+
+Recursively break the problem down into smaller versions 
+	Each subproblem must be an identical problem just smaller in size
+	Once you get to a sufficiently small size you can brute force it
+	
+Mathematical induction
+
+Base step
+	n=1
+
+Inductive step
+	Assume inductive hypothesis
+	
+	Inductive hypothesis: Assume the strategy is correct for n<=k
+	
+	Prove the strategy is correct for n=k+1
+	Prove the strategy is correct for 
+
+
+Efficiency - reduce costly operations; complexity
+
+Recurrence equation
+	Solve by unwinding 
+	Solve by induction
+	Guess and verify - verify using induction
+	

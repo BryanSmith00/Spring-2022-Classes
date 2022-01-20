@@ -1,0 +1,48 @@
+Data Science Lecture 2
+
+Training the model - Find the coefficients
+	Fitting the model - same thing
+
+70-80% of data for training
+20-30% testing
+
+Predictive (Supervised learning)
+	The science of using data to predict an outcome (clicking, price of stock)
+	Uses a label of what to compare to
+	
+Descriptive (Unsupervised learning)
+	Using data to group items/users into categories (ie. extract topics/categories from articles)
+	No label to compare to
+
+Prescriptive (Reinforcement learning)
+	Optimizing action based on response variable 
+	
+Exploratory
+	Can we describe characteristics of items/users with particular attributes we are interested interested
+	
+A/B testing
+
+
+Linear Regression
+
+	Given a colletion of points (x,y) to learn from can we find a function minimizing the distance to the data
+
+	Testing - see how the model behaves with new data
+	
+Supervised 
+	Regression
+	Classification
+	Recommendation engin
+	decision tree
+	
+Model Quality
+
+	Completeness
+	
+	Fidelity - do the measurements capture the reality. any issues or variance
+	
+	Consistency
+	
+	
+Hadoop - Distributed framework for big data
+
