@@ -1,0 +1,29 @@
+Data Science Lecture 1
+
+4 projects on blackboard
+
+1 of the projects can be considered as the final group project 
+the other 3 can be used as +12 points on the final exam
+
+each of the project datasets must be different
+
+
+*Remember this: The purpose of data science is to make the right decision
+
+Collaborative data science
+1. planning
+2. data preparation
+3. modeling
+	-Create model
+	-Validate model (accurate? does it generalize well?)
+	-Evaluate model (how accurate and informative is it)
+	-Refine data (tweak the data to be more informative and model able)
+4. follow up
+
+model is a rule for the data to follow
+
+Big data (3 V's)
+
+- Volume
+- Velocity
+- Variety

@@ -1,0 +1,15 @@
+Algo lecture 1
+
+Celebrity problem
+	Start with n people
+	Everyone knows the celebrity. the celebrity knows nobody
+	Choose 2 people A and B. ask A if they know B. If they do then A cannot be the celebrity and if no then B cannot be the celebrity
+	after n-1 questions the celebrity will remain
+	
+
+Recursive thinking
+divide and conquer method
+splits the problem into smaller problems of the same type
+
+Termination step == base case
+
