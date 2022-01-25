@@ -1,0 +1,97 @@
+Data Science Lecture 3
+
+Data Preprocessing
+
+	Less data - faster learning
+	Higher accuracy
+	Simple results
+	Fewer attributes - removing redundant or irrelevant features
+	
+	
+	Data Cleaning
+		Missing values - use most probable values to fill in missing values
+		Noisy data - binning, regression, clustering
+	
+	Data Integration
+		Entity ID Problem - metadata
+		Redundancy - Correlation analysis (Correlation coefficient, chi-square)
+	
+	Data transformation
+		Smoothing
+			Data cleaning
+		Aggregation
+			Data reduction
+		Generalization
+			Data reduction
+		Normalization
+			Min-max, z-score, decimal scaling
+		Attribute construction
+	
+	Data reduction
+		Data Cube aggregation
+			Store multidimensional aggregated information
+		Attribute subset selection
+		
+		Dimensionality reduction
+			Discrete wavelet transform (DWT), Principle components analysis (PCA)
+		Numerosity reduction
+			Regression and log-linear models, histograms, clustering, sampling
+			
+	
+	1. Missing data
+		Ignore it - not great idea
+		Fill it manually
+		Imputation - replacing missing values, likely with an average
+		
+		df.isnull() - returns a boolean matrix for NaN values
+		df.isnull().sum() - returns the columns with missing data
+		df.dropna()
+		
+		from sklearn.impute import SimpleImputer
+		imputer = SimpleImputer(missing_values=np.nan, strategy='mean')
+		imputer = imputer.fit(df[['Weight]])
+		df['Weight'] = imputer.transform(df[['Weight']])
+		
+		Handling categorical variables
+			*Ordinal categorical variables - discrete variables that can be ordered. M<L<XL<XXL
+				mapping (map())
+				label encoder - sklearn.preprocessing import LabelEncoder
+			*Nominal categorical variables - continous variables can't be ordered
+				One-Hot encoding using get_dummies() function from pandas - splits the column into n new columns where n is the number of options for th variable
+					Problem with one-hot is multicollinearity
+					OneHotEncoder from sklearn
+					
+		Multicollinearity - features that are strongly dependent on each other
+			pairplot can show you correlation to deal with
+			drop_first=True to avoid multicollinearity
+			cf_cat = pd.get_dummies(df_cat[['color','size','price']], drop_first=True)		
+				
+		
+	2. Noisy data
+	
+		Binning - transforming numerical variables into categorical counterparts. age goes into 20-39, 40-59, 60-79
+		Numerical variables are usually discretized in the modeling method based on frequency tables (eg decision trees)
+			*Equal width binning	- divides the data into k intervals of equal size width = (max-min)/k
+			*Equal frequency binning - K groups such that each group contains about the same number of values
+			
+			Look at the histogram to try intervals
+			
+			*supervised binning - Transform numerical variables into categorical counterparts and refer to the target (class) information when selecting 
+				discretization cut points
+				
+			***Entropy-based binning - uses a split approach the entropy is calculated based on the class label. The majority of the values in a bin correspond
+				to the same class label (forms pure groups). Formally it is charaterized by finding the split with the maximum information gain
+
+				Entropy is the measure of uncertainty with a random variable (probability that the event will occur)
+					Very sure the event will occur - low entropy
+					Unsure that the event will occur - high entropy
+					Essentially binning based on probability
+					
+					Entropy = -prob1*log(prob1) -prob2*log(prob2) -.... - Total entropy
+					Information gain informs how you should bin
+					Information gain = Entropy(Total) - Entropy(One of the options)
+					Look at all the different ways to bin the data and choose the one with the highest information gain (Low entropy)
+					
+					
+					
+	3. Inconsistent data

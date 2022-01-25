@@ -1,0 +1,40 @@
+Algorithms Lecture 3
+
+Algorithm strategies
+	Divide and conquer (Recursive)
+	Dynamic programming
+	Greedy (iterative)
+	Randomization
+	Brute force
+	Data structures?
+	...
+	
+algorithms
+	Pseudocode
+	Explain
+	Prove
+	Efficiency
+
+
+Counting operations
+	1. mathematical operations, adding, subracting, multiplying
+	2. accessing memory. Read, write
+	
+	Usually abstract out many of the operations and focus on the most costly operations
+	
+
+Asymptotic complexity notation
+	asymptotic as n->infinity
+	
+	ignore constant factors
+	
+Big-O
+	lim n->infinity f(n)/g(n) <= constant C
+	
+
+Efficient algorithms
+	We generally consider polynomial functions to be efficient
+	O(n), O(n^2).. etc
+	
+Exponential time = bad
+

@@ -1,0 +1,171 @@
+Digital Image Processing Lecture 3
+
+Intro to Python
+
+	Python is interpreted not compiled
+	
+Printing 
+	Elements separated by a comma print with a space in between
+	print("Hllo","world)
+		Hello world
+		
+
+Variables are just assigned not declared
+	Don't need a type 
+	Variables are simply references to objects
+	
+Everything in python is an object
+
+
+Complex numbers are built in to python
+	x = 3+2j
+	y = -1j
+	x + y
+	>>(3+1j)
+
+Numbers are immutable
+
+String functions
+
+len(String) - length of a string
+
+str(Object) - Converts object into a string
+
+
+String formatting
+	<formatted strin> % <element to insert>
+	Can use %s for everything
+	
+Datastructures
+
+1. List - Data can be of different types (mutable_
+	x = ["hello", (3+2j), 3]
+	x[0]
+	x[0:2] - Not including 2
+	x.append("dssd") - Adds new elemnt to the end of the list
+	x[i] = a
+	
+2. Tuples - Similar to lists but immutable
+	x = (1,2,3)
+	x[1:]
+	Declaring a tuple with one value must end with comma y = (2,)
+	
+
+3. Dictionaries (Mutable) (unordered)
+	Sets of key value pairs
+	d = {1:"hello", 2:"two", "three":42}
+	can use any data type for keys and pairs
+	keys must be immutable so no lists
+	del(x[1]) deletes objects from a dictionary
+	
+
+Copying data structures
+
+newlist = list(x)
+newdictionary = copy(dictionary)
+
+
+Boolean
+	0 and none are considered false
+	Everything else is considered true
+	
+	Empty list is considered false
+	
+
+Control statements
+
+break - Jumps 
+
+continue - Skips 
+
+pass - nothing empty placeholder
+
+The Loop else clause
+	Can use an else after a loop
+	executes if the loop exits normally not by a break
+	
+range(int)
+	Generates an array of numbers 
+	Used for iterating through loops
+	for x in range(5):
+		
+
+Functions
+	def name():
+	
+	functions are first class objects
+		can be assigned to a variable
+		can be passed as a parameter
+		can be returned from a functions
+
+	Can also define functions inside of other functions
+	
+
+Parameters: names
+	call by name
+	any positional arguments must come before named ones in a call
+	
+	def foo(a,b,c):
+	
+Parameters: Default
+	def foo(x=3):
+		print(x)
+	
+	foo()
+		>>3
+	foo(10)
+		>>10
+	
+
+Modules
+	Highest level structures in python
+	
+	import mymodule - brings all elements of mymodule in but must refer to it as mymodule.<element>
+	
+	from mymodule import x
+	
+	from mymodule import *
+	
+from math import *
+
+In assignments do not use built in functions from numpy or opencv
+
+
+Logical operators
+	and
+	or
+	not
+	
+Tools and software
+
+	numpy - numerical computing (matrices)
+	Matplotlib - basic graphing + plotting
+	OpenCV - open source computer vision library
+
+
+Typically images are 8-bit black and white 
+	pixel values range from 0 (dark) to 255 (light)
+	
+	Color images are basically 3 of the matrices one each for red, green, and blue
+	
+	
+Numpy operations are element wise
+
+dot product
+	np.dot(A,B)
+	
+Transpose
+	matrix.T
+	
+
+OpenCV Examples
+
+	1. Load and Display images
+		1. Shape images
+		2. Converting to grey scale/ color spaces
+		
+	2. Create images
+	
+	3. Access pixels
+	
+	4. Writing/Drawing on images
