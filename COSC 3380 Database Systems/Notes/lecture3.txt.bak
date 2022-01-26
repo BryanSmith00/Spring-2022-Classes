@@ -1,0 +1,55 @@
+Database Design Lecture 3
+
+Snapshot - backup of the database. copy
+
+database is self describing
+	Catalog - metadata
+		Gives you the description of the types of data stored
+		
+Characteristixs of a database approach
+	Insulation between programs and data
+		Program-data independence
+		Allows changing data structures and storage organization in the programs without impacting the DBMS
+		
+	Data abstraction
+		Data model - used to hide storage details and present the users with a conceptual view of the database
+		
+	Support multiple views of the data
+		Different people can see different pieces of the data
+		
+	Sharing of data and multi-user transaction processing
+		Concurrency control
+	
+		Recovery subsystem ensures each completed transaction is permanently recorded in the database
+	
+	Controlling redundancy in data storage
+	
+	Enable sharing od data among multiple users
+	
+	Provide storage structures eg indexers for efficient query processing'
+	
+	Persistent storage for program objects
+	
+	Representing complex relationships among data
+	
+	Active processing and triggers*
+	
+
+Database Users
+
+	Actors on the scene - Those who use control design develop and maintain the database
+		Database admins
+			Responsible for authorizing access to the database
+			For coordinating and monitoring database use
+	
+		Database designers
+			Responsible forr defining the contents, structure, constraints, and functions of the database
+			Communicate with the end user and find out their needs
+			
+		End Users
+			Enter data, run queries, update the database content
+			
+	Workers behind the scene  - those who design and develop dbms software and related tools
+	
+	
+	
