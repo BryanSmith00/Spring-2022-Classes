@@ -1,0 +1,70 @@
+Digital Image Processing Lecture 4
+
+Perspective projection - reduction of the dimensionality of a projection
+	3D world to a 2D imaging plane
+	
+	Center of the lens represents (0,0,0) in the 3D plane. Z represents depth
+	
+	(x,y) are the dimensions of the imaging plane
+	
+	f/C - Magnification factor
+		f = focal length
+		C = distance from lens to object
+	
+	Similar triangles
+	
+	
+How do we generate a digital image
+
+	Start with a picture of something
+	
+	Lay a grid over the picture and measure the intensity/brightness of each cell
+	
+	f(x,y) intensity on the imaging surface = i(x,y) illumination from light source * r(x,y) reflectivity index
+	
+	Light is typically measured in Lumens (Luminous flux)
+		90,000 lumens/m^2 on a sunny day
+		
+	Grey scale - scale of luminousity from black to white
+	
+
+Sensors can come in different form factors
+
+	Single sensor can be translated around to capture an image (scanner)
+	
+	Strip sensor - Line of sensors so image is fixed along the length of the strip (Imaging from flights)
+	
+	Array sensor - 2D grid of sensors to capture a 2D image of fixed x and y dimensions
+	
+	
+Analog/Digital Conversion
+
+	Sampling and quantization
+	
+	Quantizing - Binning the samples so you don't end up with very similar samples right near each other
+	
+	Sampling
+		Converts the analog signal to a digital representation by taking a sample every certain distance
+		
+	Quantization
+		Each pixel grey level is quantized assigned one of the finite set of numbers (generally integers indexed from 0 - k-1)
+		Typically there are K = 2^b grey values
+		b is the number of bits representing the grey values
+		
+
+Representing Digital Images
+
+	Discrete intensity interval [0, L-1] L=2^k 
+		AKA dynamic range
+		
+	Total bits is m*n*b which is width by length by number of bits for each pixel
+	
+
+Spacial Resolution
+	A measure of the smalles discernible detail in an image
+	Stated with line pairs per unit distance (pixels per inch) or dots per inch dpi
+	
+
+Intensity Resolution
+	The smallest discernible change in intensity levl
+	stated with 8 bits, 12 bits, 16 bits, etc	
