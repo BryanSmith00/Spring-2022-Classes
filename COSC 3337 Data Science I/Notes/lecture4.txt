@@ -1,0 +1,75 @@
+Data Science Lecture 4
+
+Data transformation
+
+	Scaling Data
+		MinMaxScaler - default use this one
+		StandardScaler - if you need normalized features
+		RobustScaler - if you have outliers and can handle a larger range
+		
+		
+Add boxplots to everything
+
+
+Data Accuracy: cross_val_score
+	sklearn
+	
+	
+Data Integration
+	1. Schema integration and object matching
+	2. Redundant data (between attributes)
+	
+
+Chi-square test
+	For categorical (discrete) data use chi-square test to find correlation
+	
+
+Data Reduction
+	Not deleting data but compressing it
+	
+	
+	
+Statistical Learning
+
+	f - function model
+	
+	Parametric methods
+		each variable has parameters
+		function with coefficients on the variables?
+		Learn the coefficients from the training data
+		
+		Simple neural networks
+		LDA
+		Logistic regression
+		Naive Bayes
+		Linear Regression
+		
+		Simple, fast, dont need much data
+		
+		Limitations: Works best with small problems, Poor fit, makes more assumptions about the underlying function
+		
+	
+	Non-parametric methods
+		They do not make explicit assumptions about the functional form of f
+		
+		K-nearest neighbors
+		Decision trees like CART and C4.5
+		Support vector machines
+		
+		Advantages: Flexible, no assumptions about underlying function, higher performant models
+		
+		Limitations: Needs more data, slower to train, overfitting
+		
+	
+Supervised vs Unsupervised
+
+	Supervised - Color/shape/weight
+		Linear Regression
+		
+		Supervised learning can be divided into Regression and Classification
+			Regression - Continuous/numerical (what will the temp be)
+			Classification - categorical (will it be hot or cold tomorrow)
+	
+	Unsupervised - How can the different fruits be classified
+	
+	

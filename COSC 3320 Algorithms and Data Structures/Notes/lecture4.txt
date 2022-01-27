@@ -1,2 +1,42 @@
 Algorithms Lecture 4
 
+Big-O (Omicron - Upper bound)
+
+	f(n) = O(g(n))
+	if there exists constants c and n such that 
+		f(n) <= c g(n) for all n > n0
+	
+	lim n->inf f(n)/g(n) <= c 
+	
+	
+little-o ??
+	
+
+Big-Ω (Omega - Lower bound)
+
+	f(n) = Ω(g(n))
+		if g(n) = O(f(n))
+	
+	lim n->inf f(n)/g(n) >= c
+	
+
+Big-Θ (Theta - Tight bound)
+
+	f(n) = Θ(g(n))
+	lim n->inf f(n)/g(n) = c, c>0
+	
+
+Recursion
+	
+	GCD Problem
+		Finding the greatest common divisor of 2 numbers
+		
+	Recursion should have 2 parts
+	
+	1. Base case (Termination condition) - one or more base cases
+	
+	2. Recursive call with a strictly smaller input
+	
+	
+	Recursion tree
+		

@@ -57,7 +57,7 @@ Data Preprocessing
 				mapping (map())
 				label encoder - sklearn.preprocessing import LabelEncoder
 			*Nominal categorical variables - continous variables can't be ordered
-				One-Hot encoding using get_dummies() function from pandas - splits the column into n new columns where n is the number of options for th variable
+				One-Hot encoding using get_dummies() function from pandas - splits the column into n new columns where n is the number of options for the variable
 					Problem with one-hot is multicollinearity
 					OneHotEncoder from sklearn
 					

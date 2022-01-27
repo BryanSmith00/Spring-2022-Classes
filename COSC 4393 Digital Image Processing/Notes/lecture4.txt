@@ -67,4 +67,4 @@ Spacial Resolution
 
 Intensity Resolution
 	The smallest discernible change in intensity levl
-	stated with 8 bits, 12 bits, 16 bits, etc	
+	stated with 8 bits, 12 bits, 16 bits, etc
