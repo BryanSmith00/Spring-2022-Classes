@@ -1,0 +1,128 @@
+Databases Lecture 4
+
+End Users
+	
+	Sophisticaed
+		These incluse busines analysts, scientists, engineers, and others who are familiar with the system's capabilities
+		Many use tools in the form of software packages that work closely with the stored database
+		
+	Stand-alone
+		Mostly maintain personal databases using ready to use packaged applications
+		
+	System analysists and application developers
+		Understand user requirements of naive and sophisticated users
+		Design applications including canned transactions to meet those requirements
+		
+	Application Programmer
+		Implement the specifications developed by analysts
+		Test and debug
+		
+	Business analysts
+		Analzye vast amounts of business data and real time data for better decision making
+		
+
+Actors behind the scene
+
+	Tool developers
+		Design and implement software systems
+		modeling and designing databases
+		prototypeing
+		test data generation
+		user interface creation
+		simulation
+		performance monitoring
+		
+	System designers and implementors
+		Design and implement DBMS packages
+	
+	Operators and maintenance personnel
+		Deal with the actual hardware
+		
+
+When not to use a dbms
+	Id the database and applications are simple, well designed and not expected to change
+	if access to the data by multiple users is not required
+	
+	In embedded systems
+	
+	In real time systems ie telephone switching
+	
+	if the data is too complex to handle with a dbms. Protein folding
+
+end introduction
+
+
+Data Models
+
+	A set of concepts to describe
+		The STRUCTURE of the database
+		The OPERATIONS for manipulating these structures
+		Certain CONSTRAINTS that the database should obey
+		
+	Data model structure and constructs
+		
+		Define the database structure
+		
+		Constructs typically include ELEMENTS (and their data type) as well as groups of elements 
+			(ENTITY, RECORD, TABLE, and RELATIONSHIPS among such groups)
+		
+		Constraints specify restrictions on valid data
+			must be enforced at all times for all the data
+			
+	
+	Data model operations
+		insert, delete, update
+		*CRUD - Create, read, update, delete
+		
+	User defined operations
+		
+
+Categories of data models
+
+	Conceptual (High-level, semantic) data models
+		provide concepts that are close to the way many users percieve the data
+	
+	Physical (Low-level, internal) data models
+		provides concepts that describe how the data is stored in the computer
+		usually managed completely by dbms and operating system
+		
+	Implementation (representational) data models
+		provide concepts between conceptual and physical
+		often used
+		
+	Self-describing data models
+		combine the description of data with the data values
+		
+
+Schemas
+
+	Description of the database
+		includes descriptions of the database structure, data types, and constraints
+		
+	Schema Diagram
+		An illustrative display of the schema
+		
+
+Instances
+
+	Database state
+		The actual data stored in the database in a moment in time
+		Includes all the data in the database
+		
+		Content of the database at any point in time
+		
+		Initial database state
+			database state when it is initially created and loaded into the system
+			
+		valid state
+			a state that satisfies the structure and constraints of the database
+		
+
+******
+DATABASE SCHEMA changes very infrequently
+
+DATABASE STATE changes every time the database is update
+
+SCHEMA -> INTENSION
+STATE -> EXTENSION
+******
