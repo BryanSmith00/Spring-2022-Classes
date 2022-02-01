@@ -1,0 +1,5 @@
+Algo Lecture 5
+
+    Geometric series
+        (x^(K+1) - 1) / (x-1)
+        

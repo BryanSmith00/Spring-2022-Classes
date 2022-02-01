@@ -1,0 +1,35 @@
+Data Science I Lecture 5
+
+pairplot
+
+Linear Regression
+    First order linear model
+        y = b0 + b1*x + e
+        b0 is the y intercept
+        e is the error
+    
+    Least Squares Method
+
+    Coefficient of Determination (R^2)
+        Measure of the error of a linear regression model
+
+    SSR - Variation explained by the regression line
+    SSE - Unexplained variation (error) (Sum of squares for errors)
+
+    R^2 is always between 0 and 1. 0 means that no variance has been explained, 1 is the opposite
+
+    No linear relationship - line should be horizontal
+
+    t stat? (large is good)
+    p-value? (small is good)
+
+    Do not rely on R^2 alone also take into account t stat and p-value
+
+
+Interaction
+    Write out the interaction that the model shows in english
+
+OLS ordinary least squares
+
+sklearn .score() gives R^2
+

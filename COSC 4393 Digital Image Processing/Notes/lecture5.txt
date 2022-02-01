@@ -1,0 +1,33 @@
+Digital Image Processing Lecture 5
+
+Spacial Resolution 
+    The smallest discenrible detail in an image
+
+Geometric Transformation
+    Make an image larger or smaller
+
+    Multiply all pixel locations by the scaling factor
+
+
+Interpolation
+    The process of using known data to estimate unknown values
+        eg zooming, shrinking, resampling, etc
+
+    
+Inverse Lookup
+    1. Create an image of the desired size
+    2. For each pixel in the new image caculate which pixel it corresponds to in the original image
+    3. Uses values from nearby pixel to guess missing values
+
+Nearest Neighbor Interpolation
+    For the reverse lookup just choose the closest pixel and use that values
+
+Linear Interpolation (1D)
+
+
+Bilinear Interpolation (2D)
+    Uses 4 nearest neighbors
+    3 iterations of linear Interpolation
+
+Bicubic Interpolation
+    16 neighbors
