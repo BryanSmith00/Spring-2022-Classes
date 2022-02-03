@@ -1,0 +1,75 @@
+Database Systems Lecture 5
+
+Three-Schema Architecture
+
+    To support DBMS characteristics of 
+        Program-data independence
+        Support of multiple views of the data
+    
+    Defines DBMS as three levels
+        
+        1. Internal Schema - to describe physical storage structures and access paths (eg. indexes)
+            typically uses a physical data model
+    
+        2. Conceptual Schema - to describe the structure and constraints for the whole database for a community of users
+            uses a conceptual or an implementation data model
+
+        3. External Schema - to describe the various user views
+            Usually uses the same data model as the conceptual schema
+
+    Mappings among schema levels are needed to transform requests and data
+        programs refer to an external schema and are mapped by the DBMS to the internal schema for execution
+        Data extracted from the internal DBMS level is reformatted to match the user's external view
+            ex. formatting the results of a query for display in a web packaged
+    
+
+Data independence
+
+    Logical data independence - the capacity to change the conceptual schema without having to change the external schemas and their associated application programs
+        ex. adding data items, changing constraints, etc.
+    
+    Physical data independence - the capacity to change the internal schema without having to change the conceptual schema
+        ex. changing storage media, changing file paths, etc.
+
+
+    When a schema at a lower level is changed only the mappings between this schema and the one higher-level schemas need to be changed
+        in a DBMS that fully supports data independence
+
+    The higher-level schemas themselves are unchanged the application programs need not be changed
+
+
+DBMS languages
+
+    Data Definition Language (DDL)
+        Used by the DBA and database designers to specify the conceptual schema of a database
+        In many DBMSs the DDL is also used to define internal and external schemas (views)
+
+        in some DBMSs separate storage definition languages (SDL) and view definition languages (VDL) are used
+
+    Data Manipulation Language (DML)
+        used to specify database retrievals and updates
+
+        DML commands (data sublanguage) can be embedded in a general-purpose programming language (host language)
+            ex. embed SQL queries in C++
+        
+        Types of DML
+
+            * High level or non-procedual language
+                SQL the relational language
+                Are "set"-oriented and specify what data to retrieve rather than how to retrieve it
+                DCLARATIVE language
+
+            * Low level or procedural language
+                Retrieve data one record-at-a-time
+                constructs such as loops are needed to retrieve multiple records along with positioning pointers
+            
+
+Teams and Topics for Projecs
+
+    Team 3
+        Hennig, Santiago Ignacio
+        Amran, Daniel Elan
+        Leake, Seth Michael
+        Periera, Gleici Caroline Pires
+        Smith, Bryan Patrick
+        
