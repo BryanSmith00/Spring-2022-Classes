@@ -1,0 +1,56 @@
+Database Lecture 6
+
+Online Music Library
+    Team 3, team 18
+
+Team project checkpoint #1
+    Working together as a team
+        Aquire domain knowledge for your project topic
+        Create domain document
+            Details of the mini world
+            Entities and their properties, relationships, and constraints
+        Generate a conceptual schema
+
+    Due Feb 22 
+        email to uramamur@bcm.edu
+
+
+
+DBMS History
+
+    Centralized DBMS
+        combined everything into a single system
+        user interfaced with a remote terminal
+        mainframe design
+
+    Logical two-tier server architecture
+
+
+    Three tier client-server architecture
+        Common for web apps
+        intermediate layer called application server or web server 
+            provides a gap between the user and the Database
+
+            Increased security
+                Users have no access to the database server
+        
+        Client <-> Web server <-> database server
+
+    
+Data modeling with Entity-Relationship (ER) model
+
+    Database design
+
+    Applications design
+
+    Conceptual database design
+        To design the conceptual schema for a database application
+
+    Applications design
+        Focus on the programs and interfaces that access the database
+
+
+    Database design process
+        Gather requirements
+        Define miniworld
+        
