@@ -1,0 +1,56 @@
+Digital Image Processing Lecture 6
+
+Binary Image
+    Matrix of 0s and 1s
+    Black and white image
+
+    1 or 0 usually indicates the presence of an image property
+
+    Convention we will use
+        1 = Black
+        0 = white
+
+    Advantages
+        Very little storage required (24x less data than color)
+        Simple abstraction of information
+        Fast processing, ability to use logical operators
+        Can be compressed further
+
+    Simple thresholding
+        Simplest form of image processing
+        Define an integer threshold if the value of each pixel is greater assign it one value and another if false
+
+        Pick a threshold based on the two most common modes of the pixels of the image
+            ie. most of the pixels are 10 or 0 with some outliers so take 10 and 0 as the modes and average them for threshold
+        
+
+        Histograms
+            Can use a histogram to find the modes 
+            Generally works best BIMODAL images. eg dark background and light foreground or vice versa
+                or an image with clear peaks in the histogram
+            
+            Expected value (Method for finding threshold)
+                Sum(X p(x))
+                Sum up the values multiplied by their probabilities
+
+                Algorithm
+                    Assume a threshold (start in the middle)
+                    Compute the expected value on each side of the threshold and calculate the mean
+                    Take the mean of the expected values as new threshold
+                    Recompute the expected values until they no longer change
+
+            Otsu's binarization (Method for finding threshold)
+                Calculate mean and variance for each possible threshold
+                Weighted sum of the variances
+                    Weight is the sum of all the probabilities on that side
+                
+                Algorithm
+                    Compute histogram
+                    Computeprobabilites for each value
+                    Iterate through all possible threshold values
+                        Calculate the weight of each side
+                        Calculate the mean of each side
+                        Calculate the variance of each side
+                        Calculate the weighted sum of the variances
+                    Pick the threshold that minimizes the weighted sum of variances
+

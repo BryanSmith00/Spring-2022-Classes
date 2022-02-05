@@ -20,7 +20,7 @@ Inverse Lookup
     3. Uses values from nearby pixel to guess missing values
 
 Nearest Neighbor Interpolation
-    For the reverse lookup just choose the closest pixel and use that values
+    For the reverse (inverse) lookup just choose the closest pixel and use that values
 
 Linear Interpolation (1D)
 
