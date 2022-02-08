@@ -1,0 +1,58 @@
+Digital Image Processing Lecture 7
+
+X is rows
+Y is columns
+
+Binary images and bimodal histograms contd.
+
+Logical operations (again)
+    NOT
+    AND 
+    OR
+    
+    Demorgan's laws 
+
+    MAJ - majority operator
+        Number of input variables must be odd
+    
+Logical operators on images
+
+    Binary AND
+        Shows the overlap of black regions
+    
+    Binary OR
+        Shows the overlap of white regions
+    
+    XOR on 2 images gives the difference in white and black pixels
+
+
+Blob coloring
+    Region classification and correction
+
+    Usually used to extract a small number of objects or single object by thresholding
+
+    Classify pixels based on their neighborhood
+        if the pixels in its neighborhood are 1 then the pixel is a 1
+    
+    if pixel == 1
+        if P(x-1,y) == 0 and P(x,y-1) == 0
+            Image_regions(x,y) = region
+            region += 1
+        if P(x-1,y) == 0 and P(x, y-1) == 1
+            Image_region(x,y) = Image_region(x,y-1)
+        if P(x-1,y) == 1 and P(x, y-1) == 0
+            Image_region = image_region(x-1,y)
+        if P(x-1,y) == 1 and P(x,y-1) == 1
+            if image_region(x,y-1) == image_region(x-1, y)
+                image_region(x,y) = image_region(x,y-1)
+            else
+                iterate through all pixels and replace region with same region
+
+
+    After blob coloring you can simply retain the blob with the greatest number of pixels
+
+    To remove holes, complement the image and do the blob correction again which removes all the small white blobs
+
+
+Binary Morphology 
+    to be contd.

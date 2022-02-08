@@ -1,0 +1,35 @@
+Data Science Lecture 7
+
+Similarity
+    Measure of how alike two data objects are
+
+
+Dissimilarity matrix
+
+
+Qualitative variables
+
+    Nominal
+
+    Ordinal
+
+    Binary
+        Symmetric
+        Asymmetric
+
+    
+1. Interval-valued variables (quantitative, numeric)
+
+    Measured on a scale of equal sized units
+
+    Mean Absolute Deviation (MED)
+    
+        standardize data
+        calculate z-score
+
+    
+
+Calculating dissimilarity matrix of nominal attributes
+
+    p = number of columns
+    

@@ -1,0 +1,36 @@
+Algo Lecture 7
+
+T(n) - number of comparisons (input size n)
+
+Recurrance Unwinding? (textbook pg 60)
+
+    a * f(n/b) = c * f(n)?
+    T(n) = a T(n/b) + f(n)
+
+    ex. T(n) <= 2T(n/2) + n
+        T(n) = O(n log n)
+
+Sorting
+    minimized the number of comparisons (costly operation)
+
+Merge Sort (Divide and conquer)
+    T(n) = 2 * T(n/2) + n
+    O(n * log n)
+
+    Split the array into 2 halves
+
+    Recursively solve the two subarrays independently
+
+    Combine the two sorted subarrays by merging
+
+
+Quick Sort (Conquer and divide)
+
+    Choose pivot (random element works best)
+
+    Partition A about the pivot
+        create 2 subarrays A1, A2
+        A1 = all elements less than the pivot
+        A2 = all elements greater than the pivot
+
+    return Quicksort A1 + pivot + Quicksort A2
