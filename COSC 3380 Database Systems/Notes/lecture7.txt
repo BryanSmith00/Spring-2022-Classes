@@ -1,0 +1,81 @@
+Database Lecture 7
+
+ER Model Concepts
+
+    Entities and Attributes
+        Entity is the basic concepts for the ER Model
+
+        Entities are specific things or objects in the mini-world that are represented in the Database
+            eg. Employee john smith, the research department, the product x
+
+        Attributes are properties used to describe an Entity
+
+    A specific entity will have a value for each of its Attributes
+
+    Each attribute has a value set or data type associated with it - integer, string/char, date, enumerated type, etc
+
+
+    Types of attributes
+        Simple
+            each entity has a single atomic value for the attribute, eg. SSN, gender
+
+        Composite
+            The attribute may be composed of several components, eg. Address, apt#, house#, street, city, zip, etc.
+                name, first, middle, last
+
+        Multi-valued
+            An entitiy may have multiple values for that attribute, eg. color of a car, or how many degrees a student has
+
+
+        Composite and multi-valued attributes may be nested arbitrarily to any number of levels
+
+
+    Entity types and key attributes
+
+        entities with the same basic attributes are grouped or typed into an entity type
+            for example type employee and project 
+        
+        an attribute of an entity type for which each entity must have a unique value is called a key attribute
+            key attributes can be composite
+
+            an entity may have more than one key
+
+        keys are underlined
+
+
+    Value sets (Domains) of attributes
+
+        Each simple attribute is associated with a value set
+            eg. lastname has a value which is a character string of up to 30 characters
+            date has a value consisting MM-DD-YYYY where each letter is an integer
+
+        Value set specifies the set of values associated with an attribute
+
+
+ER diagrams
+
+    Entity types are displayed in a rectangular box
+
+    Attributes are displayed in ovals
+        key attributes are underlined
+    
+
+Steps for designing databases
+
+    Aquire domain knowledge
+
+    Gather requirements
+
+    Conceptual Schema
+        Entities 
+        Attributes
+            Types of attributes
+                Simple, composite, multi-valued
+            Key attributes
+            Value set
+        Data types
+    
+
+Weak attribute has no key values
+    Uma doesn't like it
+
