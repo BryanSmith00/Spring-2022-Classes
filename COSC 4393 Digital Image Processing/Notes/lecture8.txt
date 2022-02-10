@@ -71,3 +71,41 @@ Assignment 1
             let I be the original image, R is the rotated image
 
 
+Binary Morphology
+
+    mathematical Morphology
+        morphology = shape
+    
+    Morphological operations affect the shapes of objects and regions in binary images
+
+    All processing is done on a local basis ie. regions or blobs are affected locally
+
+    Morphological operators
+        Expand (dilate) objects
+        Shrink (erode) objects
+        Smooth object boundries and eliminate small regions or holes
+        Fill gaps and eliminate 'peninsulas'
+
+    
+    Structuring element is a geometric relationship between pixels
+
+    Windowing
+
+        Typical windows
+            1D: Row(3), Row(5), Col(3), Col(5)
+
+            Always an odd number of pixels
+
+        Apply the window over each pixel in the image and apply the morphological operator
+
+
+    Dilation (OR) - Makes the objects larger
+        Can remove holes, gaps, and bays of small size
+
+    Erosion (AND) - Makes the objects smaller
+        Removes objects and peninsulas of too-small size
+
+    Median (MAJ) - Possesses qualitative attributes of both dilation and erosion but does not generally change size
+        Removes both objects and holes of two-small size
+
+    

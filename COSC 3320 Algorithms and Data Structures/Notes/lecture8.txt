@@ -1,0 +1,9 @@
+Algo Lecture 8
+
+Quick sort contd.
+
+    Runtime depends on the pivot
+
+
+Selecting a pivot ??
+
