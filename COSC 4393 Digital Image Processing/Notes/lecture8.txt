@@ -1,0 +1,111 @@
+Digital Image Processing Lecture 8
+
+Geometric transformation, reverse lookup
+
+Assignment 1
+
+    Rotate Image and Perform Interpolation
+
+        1. Forward rotate Image
+        2. Inverse rotate Image
+        3. Rotation with interpolation
+
+    Rotation
+
+        Initial Location (x, y)
+        After rotation about theta
+        (x', y')
+            x' = x*cos(theta) - y*sin(theta)
+            y' = x*sin(theta) + y*cos(theta)
+
+        Rotation matrix
+            [[cos(theta), -sin(theta)], (x)
+            [sin(theta), cos(theta)]]  (y)
+
+        Reverse lookup you have to invert this Processing
+        (x,y) = A^-1 (x', y')
+
+
+        Forward rotation = counter clockwise
+
+        (Our origin starts at the top left of an Image)
+            (x,y) = (rows, columns)
+
+        
+        Determine the size of rotated Image
+
+            Let I be the original Image
+
+            1. Compute rotation matrix
+            2. Rotate corners
+                1. Get (min x, min y) (top left of image)
+                2. Get (max x, max y) (bottom right)
+                    1. Rows = max x - min x
+                    2. Cols = max y - min y
+                3. Size of rotated image = (rows, cols)
+            3. Created rotated image (R) of size (rows, cols)
+            4. For each (i, j) in original image:
+                1. Compute rotated location (i', j')
+                2. i'n = i' - min x, i'n = j' - min y
+                3. R(i'n, j'n) = I(i, j)
+
+
+        Reverse rotation (clockwise)
+
+            Input:
+            1. Rotated image
+            2. Theta: the angle by which the image was rotated
+            3. Origin (O = (Oi, Oj))
+            ...
+        
+            1. Compute inverse rotation matrix
+            2. Create image (I) of shape (original shape)
+            3. For (i'n, j'n) in rotated image
+                1. Calculate location with repect to O
+                    i' = i'n - Oi, j' = j'n - Oj
+                2. Compute inverse rotation on (i', j') to get (i, j)
+                3. I(i, j) = R(i'n, j'n)
+
+            
+        3. Rotation with interpolation
+            let I be the original image, R is the rotated image
+
+
+Binary Morphology
+
+    mathematical Morphology
+        morphology = shape
+    
+    Morphological operations affect the shapes of objects and regions in binary images
+
+    All processing is done on a local basis ie. regions or blobs are affected locally
+
+    Morphological operators
+        Expand (dilate) objects
+        Shrink (erode) objects
+        Smooth object boundries and eliminate small regions or holes
+        Fill gaps and eliminate 'peninsulas'
+
+    
+    Structuring element is a geometric relationship between pixels
+
+    Windowing
+
+        Typical windows
+            1D: Row(3), Row(5), Col(3), Col(5)
+
+            Always an odd number of pixels
+
+        Apply the window over each pixel in the image and apply the morphological operator
+
+
+    Dilation (OR) - Makes the objects larger
+        Can remove holes, gaps, and bays of small size
+
+    Erosion (AND) - Makes the objects smaller
+        Removes objects and peninsulas of too-small size
+
+    Median (MAJ) - Possesses qualitative attributes of both dilation and erosion but does not generally change size
+        Removes both objects and holes of two-small size
+
+    
