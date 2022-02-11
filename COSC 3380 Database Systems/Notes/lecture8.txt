@@ -1,0 +1,64 @@
+Database Lecture 8
+
+Mini world
+
+    The Scope of your project. Not the entire universe but only the part you are supporting
+    our mini world would be how the users can interact with the database and have access to music
+
+
+Weak entity
+    An entity that does not have a key attribute
+    Identification dependent on another identity
+
+    A weak entity must participate in an identifying relationship type with an owner or identifying entity type
+
+
+ER Model
+
+    Entities
+    Attributes
+    Relationships
+
+
+Relationships and relationship types
+    A relationship relates two or more distince entities with a specific meaning
+
+    ex. an employee works on a project. An employee manages a department
+
+    Relationship types
+        Binary relationship - degree 2 relationship    
+        N to 1 (N:1) - many to one. eg. many employees work in 1 department
+        M:N - many to many
+
+    Degree of a relationship type - the number of participating entity types
+
+    Relationship type
+        is the schema description of a relationship
+        identifies the relationship name and the participating entity types
+        also identifies certain relationship constraints
+
+    Relationship set
+        The current set of relationship instances represented in the database
+        the current state of a relationship type
+
+    Relationships can have attributes
+
+    More than 1 relationship type can exist between the same participating entity types
+
+    Relationship constraints
+        Cardinality ratio 
+            1:1
+            1:N
+            M:N
+        
+        Existence dependency constraint specifies minimum participation
+            zero 
+            one or more
+
+    Ternary relationship
+
+    Recursive relationship type
+        self-referenceing
+            eg. 1 employee can be a supervisor and 1 can be a supervisee
+
+    
