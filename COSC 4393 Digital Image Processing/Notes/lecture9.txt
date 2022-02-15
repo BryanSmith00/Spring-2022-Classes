@@ -1,0 +1,78 @@
+Digital Image Processing Lecture 9
+
+Binary Image Processing contd.
+
+Combination morphological operators
+
+    OPEN = erosion (by b) followed by a dilation (by b)
+        where b is the window
+
+    Only the small objects are removed the small holes remain
+
+    CLOSE = Dilation -> Erosion
+
+    OPEN-CLOSE || CLOSE-OPEN
+        tend to link neighboring objects together
+
+    
+Skeletonization
+    A way of obtaining an image's medial axis or skeleton
+
+    Algorithm on the powerpoint
+
+    Basically use a series of OPEN operations
+
+
+Compression: Run Length Coding
+    The number of bits required to store an N x N binary image is N^2
+
+    Works well with large black or white regions
+
+    Instead of sending each pixel it groups them by runs
+        ie. 5 black pixels in a row, you can just send 5 instead of 5 ones
+
+    Worst case: checkerboard pattern
+
+        If average run length is less than number of bits for each number being sent it is not efficien
+
+
+Compression: Contour representation and chain Coding
+
+    Used on contour images instead of binary
+
+    Contour - each black pixel can have at most 2 black pixels in its 8-neighborhood
+        single pixel thick lines
+
+    Chain code
+        Observe that if the initial coordinate of an 8-connected controu is known then the rest 
+            of the contour can be coded by giving directions from the previous pixel
+        
+
+
+Point operations
+
+    Average Optical Density
+        Average intensity of an image
+
+        low or high AOD can tell if the image is under or overexposed
+
+    A point operation is a function f that maps image I to another image J by operating on each pixel
+        The same function is applied at every point
+    
+    Linear Point Operations 
+        Do not modify spacial relationships between points
+
+        Y = P * Intensity + B
+            P - Scaling factor
+                Stretches or compresses the histogram
+
+            B - Offset
+                Shifts the histogram
+
+
+    Full-Scale Contrast Stretch 
+        y = P * X + L
+
+    
+    Nonlinear Point Operations
+        To be continued
