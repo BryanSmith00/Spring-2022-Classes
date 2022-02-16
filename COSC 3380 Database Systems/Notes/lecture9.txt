@@ -1,0 +1,47 @@
+Database Lecture 9
+
+Enumerated variables
+
+Relational Data Model
+
+    A relation looks like a table of values
+    a relation typically contains a set of rows
+
+    columns are the attributes
+
+
+    key of a relation
+        each row has a value of a data item that uniquely identifies that row in the table
+
+        sometimes row ids or sequential/random numbers are assigned as keys to identify rows
+            Call ARTIFICIAL KEYS or SURROGATE KEYS
+
+        
+    Schema of a relation
+        denoted by R(a1,a2,,...an)
+        R is the name of the relation
+        the attributes of the relation are a1,a2,...an 
+
+        Degree or arity of a relation
+            number of attributes n of its relation schema
+
+        ex. relation, STUDENT(Name:string, SSN:string, Address:string, Home_phone:string, Office_Phone:string)
+
+        Attribute Domains
+            Set of atomic values
+            each value is indivisible
+            data types
+
+        ex. domain, USA_Phone_Number. the set of 10 digit numbers valid in the united states 
+                    GPA. possible values must be floating point numbers between 0 and 4
+
+        Attribute cardinality
+            total number of values in a domain 
+
+        Current relation state
+            relation state at a given time 
+
+            changes in relation states dont change the schema
+
+    Attribute names
+        meaningful names
