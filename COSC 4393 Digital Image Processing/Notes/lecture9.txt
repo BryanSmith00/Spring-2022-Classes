@@ -71,7 +71,14 @@ Point operations
 
 
     Full-Scale Contrast Stretch 
+        Stretched the lowest value to 0 and highest to 255 (k-1)?
         y = P * X + L
+        Substitute x = 0 and x = 255 or maximum value and solve for a set of two equations
+
+        p = (K-1)/(B-A)
+        L = ?
+        
+        The powerpoint has these formulas
 
     
     Nonlinear Point Operations
