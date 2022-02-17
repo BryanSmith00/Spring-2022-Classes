@@ -1,2 +1,9 @@
 Algorithms Lecture 9
 
+Selection - Finding the kth smallest element
+
+    Similar to quicksort
+    Choose a pivot
+    Sort into all elements smaller than pivot and larger
+
+    
