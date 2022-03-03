@@ -21,6 +21,7 @@ These two components can be represented in 2 separate matrices
 Real portion (DCT - Discrete cos transform)
 * often used in practice
 
+## Usually when displaying a dft use the magnitude
 You can also represent the imaginary numbers by computing their magnitude<br>
 imaginary numbers of the form a+ $\sqrt{-1}$ b<br>
 Magnitude = $\sqrt{a^2 + b^2}$<br></br>
@@ -36,6 +37,5 @@ Highest frequencies in the center of the matrix<br>
 
 DFT is symmetric - equal to its transpose
 
-DFT is periodic in nature
-
-Periodic extension of the image - Inverse fourier transform is periodic
+DFT is periodic in nature (Periodic extension of the image)
+* Inverse fourier transform is also periodic in nature
