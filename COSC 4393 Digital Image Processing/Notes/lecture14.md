@@ -13,5 +13,8 @@ Multiply each element of the image by function (-1)<sup>(i+j)</sup> the compute 
 ## Displaying the DFT
 ---
 To display the magnitude it is usually best to logarithmically compress it<br>
-log[1 + abs($\tilde{I}$)]
+log[1 + abs($\tilde{I}$)]<br></br>
 
+Use Fourier transform to filter certain frequencies from your image.
+
+You can create masks to remove unwanted frequencies, multiply the dft by the mask and compute the inverse fourier transform 
