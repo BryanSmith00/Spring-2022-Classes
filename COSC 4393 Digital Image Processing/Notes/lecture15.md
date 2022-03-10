@@ -49,7 +49,7 @@ Combinations of these<br>
 Smoothing Filters
 * Averaging filter<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[1, 1, 1]<br>
-$\frac{1}{9}?$ [1, 1, 1]<br>
+$\frac{1}{9}$ [1, 1, 1]<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[1, 1, 1]<br></br>
 * [Gaussian filter](https://en.wikipedia.org/wiki/Gaussian_filter) - preserves edges better than averaging<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[1, 2, 1]<br>
