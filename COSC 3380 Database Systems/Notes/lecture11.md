@@ -7,7 +7,7 @@
 * Used for identification of individual tuples in a relation
 * Ensures ability to distinguish tuples when referenced from other relations
 
-## Referential Inegrity Constraint
+## Referential Integrity Constraint
 ---
 * Specified between two relations
 * Maintains consistency among tuples in two relations
