@@ -62,7 +62,7 @@ Key satisfies two properties:<br>
 * A key is a superkey but not all superkeys are keys<br>
 
 Candidate Keys
- * Relation shcema may have more than one key
+ * Relation schema may have more than one key
 
  Primary key of the relation
  * Chosen from the candidate keys

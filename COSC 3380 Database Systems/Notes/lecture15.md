@@ -46,7 +46,7 @@ Corresponding multiset operations (Duplicates allowed)
 - UNION ALL, EXCEPT ALL, INTERSECT ALL
 <br></br>
 
-## Substring pattern mathcing & arithmetic operations
+## Substring pattern matching & arithmetic operations
 LIKE keyword<br>
 
 By default pattern matching is not case sensitive
