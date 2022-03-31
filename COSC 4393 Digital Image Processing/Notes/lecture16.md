@@ -36,7 +36,7 @@ Sharpened image = f(x,y) - ∇ f(x,y)<br>
 
 ## Unsharp masking and highboost filtering
 
-1. Compute the smoothed image using an averaging filter
+1. Compute the smoothed image using an averaging filter (convolution)
 2. Mask = f(x,y) - smoothed f(x,y)
 3. Sharpened image = f(x,y) + mask
 
