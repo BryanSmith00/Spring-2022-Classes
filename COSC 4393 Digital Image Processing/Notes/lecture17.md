@@ -9,7 +9,7 @@ f(t) Convolve w(t) = $\sum$ w(tau) f(t-tau)<br></br>
 
 Discrete Fourier Transform<br>
 
->F(u) = $\sum_ {x=-inf}^{inf}$ f(x) e<sup> $\sqrt -1$ ux</sup>
+>F(u) = $\displaystyle\sum_ {x=-inf}^{inf}$ f(x) e<sup> $\sqrt -1$ ux</sup>
 <br></br>
 
 ### [Convolution Theorem](https://en.wikipedia.org/wiki/Convolution_theorem)
